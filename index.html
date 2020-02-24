@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>吹き出し</title>
+  <link rel="stylesheet" href="css/hukida.css">
+  <style>
+  body {
+    padding: 0 10px 40px;
+  }
+
+  .ex1 {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .ex2 {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    border-style: solid;
+    border-width: 20px;
+    border-color: red blue pink green;
+  }
+
+  .ex3 {
+    width: 0px;
+    height: 0px;
+    background-color: #eee;
+    border-style: solid;
+    border-width: 20px;
+    border-color: red blue pink green;
+  }
+ 
+  .ex4 {
+    width: 0px;
+    height: 0px;
+    /* background-color: #eee; */
+    border-style: solid;
+    border-width: 20px;
+    border-color: red transparent transparent transparent
+  }
+
+  .ex5 {
+    width: 0px;
+    height: 0px;
+    background-color: #eee;
+    border-style: solid;
+    border-width: 40px 20px 20px 0px;
+    border-color: red blue pink green;
+    transform: skew(-45deg ,0);
+  }
+  
+  .balloon1-1 {
+    width: 200px;
+    height: 100px;
+    background-color: #eee;
+    border-radius: 4px;
+    position: relative;
+  }
+
+  .balloon1-1::before {
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: -20px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #eee transparent transparent transparent;
+  }
+
+  .balloon1-2 {
+    width: 200px;
+    height: 100px;
+    background-color: #eee;
+    border-radius: 4px;
+    position: relative;
+  }
+
+  .balloon1-2:before {
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: -25px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 15px 20px 10px 0px;
+    border-color: #eee transparent transparent transparent;
+  }
+
+  .balloon3 {
+    width: 200px;
+    height: 100px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    position: relative;
+  }
+
+  .balloon3:after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: -19px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 15px 20px 10px 0px;
+    border-color: #fff transparent transparent transparent;
+  }
+
+
+  .balloon3:before {
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: -20px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 15px 20px 10px 0px;
+    border-color: #eee transparent transparent transparent;
+  }
+
+  .balloon4 {
+    width: 200px;
+    height: 100px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    position: relative;
+  }
+
+  .balloon4:after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: -23px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 15px 20px 10px 0px;
+    border-color: #fff transparent transparent transparent;
+  }
+
+
+  .balloon4:before {
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: -24px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 15px 19px 10px 0px;
+    border-color: #eee transparent transparent transparent;
+  }
+  
+</style>
+</head>
+<body>
+
+  <h2>ex1</h2>
+  <div class="ex1"> </div>
+  <h2>ex2</h2>
+  <div class="ex2"> </div>
+  <h2>ex3</h2>
+  <div class="ex3"> </div>
+  <h2>ex4</h2>
+  <div class="ex4"> </div>
+  <h2>ex5</h2>
+  <div class="ex5"> </div>
+  <h2>バルーン1</h2>
+  <div class="balloon1-1"> </div>
+  <h2>バルーン2</h2>
+  <div class="balloon1-2"> </div>
+  <h2>バルーン3</h2>
+  <div class="balloon3"> </div>
+  <h2>バルーン4</h2>
+  <div class="balloon4"> </div>
+
+  
+</body>
+</html>
